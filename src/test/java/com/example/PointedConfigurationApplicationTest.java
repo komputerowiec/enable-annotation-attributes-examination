@@ -8,10 +8,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = {SharedConfiguration.class})
-public class CoreApplicationTest {
-
+public class PointedConfigurationApplicationTest {
     @Test
     public void contextLoads() {
-        System.out.println("\nHello world from CoreApplication test !!!!!!!!!!!!!!!!!\n");
+        System.out.println("Hello, this time the list of items of the \"elements\" attribute should be empty !!!\n");
     }
 }

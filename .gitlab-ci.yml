@@ -1,0 +1,18 @@
+image: neatsolutionslab/jdk:multi-fat
+
+before_script:
+- source ~/.sdkman/bin/sdkman-init.sh
+
+java10.0.2-maven3.5.3:
+  stage: build
+  script:
+  - sdk use maven 3.5.3
+  - sdk use java 10.0.2-open
+  - mvn package
+
+java8.0.181-maven3.3.9:
+  stage: build
+  script:
+  - sdk use maven 3.3.9
+  - sdk use java 8.0.181-oracle
+  - mvn package
