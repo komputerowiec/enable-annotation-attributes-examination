@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/komputerowiec/enable-annotation-attributes-examination.svg?branch=master)](https://travis-ci.org/komputerowiec/enable-annotation-attributes-examination)
+
 ## Quick start
 
 There are a few special annotations in *Spring Framework* which begin with `@Enable...` prefix.
