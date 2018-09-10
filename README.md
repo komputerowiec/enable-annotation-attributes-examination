@@ -432,6 +432,18 @@ The important detail is that the above executable class is itself decorated with
 
 As we have already seen, when the [`SharedConfiguration`](src/main/java/com/example/configuration/SharedConfiguration.java) class is being processed by the framework, eventfully the `selectImports(...)` method of the [`EnableSomethingSelector`](src/main/java/com/example/annotation/EnableSomethingSelector.java) class is executed. However, even though within this class we enquire exactly the same attributes of the [`@EnableSomething`](src/main/java/com/example/annotation/EnableSomething.java) annotation as in the previous examples, this time the `elements` attribute appears to have a different value.
 
+To see it in action, execute the command:
+
+__WINDOWS__
+ ```bash
+java -cp "logback;target/demo.jar" com.example.ComponentScanApplication
+```
+__LINUX__, __MAC__
+ ```bash
+java -cp "logback:target/demo.jar" com.example.ComponentScanApplication
+```
+
+
 This time, the output printed out by the `selectImports(...)` method reveals that there are two items in the `elements` array:
 
 ```
