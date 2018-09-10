@@ -127,7 +127,7 @@ First, let's execute the test in which the [`SharedConfiguration`](src/main/java
 mvn -Pnolog test -Dtest=PointedConfigurationApplicationTest
 ```
 
-__NOTE__: In JRE 9+, the CGLIB library spits out warnings which can spoil the readability of the actual output. To suppress this warning add `--DargLine="--illegal-access=deny""` option to the `mvn` command invocation.
+__NOTE__: In JRE 9+, the CGLIB library spits out warnings which can spoil the readability of the actual output. To suppress this warning add `-DargLine="--illegal-access=deny""` option to the `mvn` command invocation.
 
 Among other maven related messages, the following output should appear in a terminal:
 
