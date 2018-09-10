@@ -53,7 +53,7 @@ To go through the below procedure you need these components to be pre-installed 
 ###### 1. Clone the source code.
 
 ```bash
-git clone git@github.com:komputerowiec/enable-annotation-attributes-examination.git 
+git clone https://github.com/komputerowiec/enable-annotation-attributes-examination.git 
 ```
 
 ###### 2. Package the project (omitting test execution for now)
@@ -356,7 +356,7 @@ The environment required to go through the ongoing steps (no changes in respect 
 ### Clone
 
 ```bash
-git clone git@github.com:komputerowiec/enable-annotation-attributes-examination.git
+git clone https://github.com/komputerowiec/enable-annotation-attributes-examination.git
 ```
 
 ### Build
